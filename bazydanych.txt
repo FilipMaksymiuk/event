@@ -1,4 +1,4 @@
-(przecinek przed check)
+s(przecinek przed check)
 CREATE TABLE nowa(id INT PRIMARY KEY, nazwa VARCHAR(60) NOT NULL , data_stworzenia DATE, cena DECIMAL(20,2) DEFAULT 5000 ,CHECK(cena>=100));
 
 CREATE TABLE nowa2(id INT PRIMARY KEY AUTO_INCREMENT, rodzaj ENUM('auto','rower')NOT NULL, odwolanie INT, FOREIGN KEY(odwolanie) REFERENCES nowa(id)ON DELETE SET NULL );
