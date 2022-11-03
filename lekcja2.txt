@@ -1,0 +1,4 @@
+DELETE FROM postac WHERE nazwa = 'Arek';
+DELETE FROM postac WHERE nazwa = 'Jarek';
+
+ALTER TABLE postac DROP FOREIGN KEY fk_statek;
