@@ -1,4 +1,18 @@
 DELETE FROM postac WHERE nazwa = 'Arek';
 DELETE FROM postac WHERE nazwa = 'Jarek';
 
+
 ALTER TABLE postac DROP FOREIGN KEY fk_statek;
+ALTER TABLE walizka DROP FOREIGN KEY walizka_ibfk_1;
+ALTER TABLE przetwory DROP FOREIGN KEY przetwory_ibfk_1;
+ALTER TABLE przetwory DROP FOREIGN KEY przetwory_ibfk_2;
+ALTER TABLE postac DROP id_postaci;
+
+
+ALTER TABLE postac ADD pesel VARCHAR(11);
+UPDATE postac SET pesel='6' WHERE nazwa = 'Marek';
+ALTER TABLE postac ADD CONSTRAINT pk_postac PRIMARY KEY(pesel);
+
+ALTER TABLE postac modify rodzaj ENUM('wiking','ptak','kobieta','syrena');
+INSERT INTO postac(nazwa,rodzaj,data_ur,wiek,pesel)VALUES('GETRUDA NIESZCZERA','syrena','2004-01-01',18,7);
+UPDATE postac SET nazwa_statku = 'statek1' WHERE nazwa LIKE '%a%';
