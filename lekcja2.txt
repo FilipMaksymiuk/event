@@ -1,18 +1,54 @@
-DELETE FROM postac WHERE nazwa = 'Arek';
-DELETE FROM postac WHERE nazwa = 'Jarek';
-
-
-ALTER TABLE postac DROP FOREIGN KEY fk_statek;
+DELETE FROM postac WHERE rodzaj ='wiking' AND nazwa!= 'Bjorn' ORDER BY data_ur ASC LIMIT 2; 
 ALTER TABLE walizka DROP FOREIGN KEY walizka_ibfk_1;
 ALTER TABLE przetwory DROP FOREIGN KEY przetwory_ibfk_1;
 ALTER TABLE przetwory DROP FOREIGN KEY przetwory_ibfk_2;
-ALTER TABLE postac DROP id_postaci;
+ALTER TABLE postac MODIFY id_postaci INT;
+ALTER TABLE postac DROP PRIMARY KEY;
+
 
 
 ALTER TABLE postac ADD pesel VARCHAR(11);
-UPDATE postac SET pesel='6' WHERE nazwa = 'Marek';
-ALTER TABLE postac ADD CONSTRAINT pk_postac PRIMARY KEY(pesel);
+UPDATE postac SET pesel = id_postaci + '1234567890';
+ALTER TABLE postac ADD CONSTRAINT pk_table PRIMARY KEY(pesel);
+ALTER TABLE postac MODIFY rodzaj ENUM('wiking','ptak','kobieta','syrena');
 
-ALTER TABLE postac modify rodzaj ENUM('wiking','ptak','kobieta','syrena');
-INSERT INTO postac(nazwa,rodzaj,data_ur,wiek,pesel)VALUES('GETRUDA NIESZCZERA','syrena','2004-01-01',18,7);
-UPDATE postac SET nazwa_statku = 'statek1' WHERE nazwa LIKE '%a%';
+INSERT INTO postac(nazwa,rodzaj,data_ur,wiek,pesel)VALUES('GETRUDA NIESZCZERA','syrena','2004-01-01',18,12345678909);
+
+
+UPDATE postac SET nazwa_statku = 'statek2' WHERE nazwa LIKE '%a%';
+
+UPDATE statek SET max_ladownosc = max_ladownosc * 0.70 WHERE data_wodowania BETWEEN '1901-01-01' AND '2000-12-12';
+
+ALTER TABLE postac ADD CHECK (wiek<1000);
+
+INSERT INTO postac(id_postaci, nazwa, data_ur, wiek, pesel) VALUES (4,'Loko','1992-03-03',30,'54321123452');
+
+CREATE TABLE marynarze LIKE postac;
+
+INSERT INTO marynarze SELECT * FROM postac WHERE postac.nazwa_statku != 'NULL';
+
+ALTER TABLE marynarze
+ADD UNIQUE (id_postaci);
+
+UPDATE marynarze SET nazwa_statku = NULL WHERE nazwa_statku = 'statek1' or nazwa_statku = 'statek2';
+
+DELETE FROM marynarze WHERE nazwa = 'Darek';
+
+
+ALTER TABLE postac DROP FOREIGN KEY fk_statek ; 
+ALTER TABLE postac DROP INDEX fk_statek;
+DELETE FROM statek WHERE nazwa_statku = 'statek2' or nazwa_statku = 'statek1';
+DELETE FROM marynarze WHERE pesel = '1234567897';
+
+DROP TABLE statek;
+
+CREATE TABLE zwierz(id INT PRIMARY KEY AUTO_INCREMENT,nazwa VARCHAR(60),wiek INT);
+
+INSERT INTO zwierz (nazwa, wiek) SELECT nazwa, wiek FROM postac WHERE postac.nazwa IN('Drozd','Loko','GETRUDA NIESZCZERA');
+
+
+
+
+
+
+
