@@ -1,6 +1,18 @@
 5.
+1.1
+CREATE TABLE maksymiukf.uczestnicy LIKE wikingowie.uczestnicy;
+INSERT INTO maksymiukf.uczestnicy SELECT * FROM wikingowie.uczestnicy;
 
-kopiowanie
+CREATE TABLE maksymiukf.etapy_wyprawy LIKE wikingowie.etapy_wyprawy;
+INSERT INTO maksymiukf.etapy_wyprawy SELECT * FROM wikingowie.etapy_wyprawy;
+
+CREATE TABLE maksymiukf.sektor LIKE wikingowie.sektor;
+INSERT INTO maksymiukf.sektor SELECT * FROM wikingowie.sektor;
+
+CREATE TABLE maksymiukf.wyprawa LIKE wikingowie.wyprawa;
+INSERT INTO maksymiukf.wyprawa SELECT * FROM wikingowie.wyprawa;
+
+
 1.2:SELECT kreatura.nazwa FROM kreatura LEFT JOIN uczestnicy ON kreatura.idKreatury = uczestnicy.id_uczestnika WHERE kreatura.idKreatury NOT IN(SELECT
 id_uczestnika FROM uczestnicy)GROUP BY nazwa;
 1.3:SELECT wyprawa.nazwa, SUM(ekwipunek.ilosc) FROM wyprawa LEFT JOIN uczestnicy ON wyprawa.id_wyprawy = uczestnicy.id_wyprawy LEFT JOIN kreatura ON uczestnicy.id_uczestnika = kreatura.idKreatury LEFT JOIN ekwipunek ON kreatura.idKreatury = ekwipunek.idKreatury GROUP BY wyprawa.nazwa;
@@ -29,3 +41,7 @@ SELECT wyprawa.nazwa,AVG(zasob.ilosc*zasob.waga/(SELECT COUNT(uczestnicy.id_wypr
 
 
 5.1:
+
+
+
+
