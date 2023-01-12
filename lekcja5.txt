@@ -30,18 +30,16 @@ FROM kreatura LEFT JOIN uczestnicy ON kreatura.idKreatury = uczestnicy.id_uczest
 
 4.2:
 
-SELECT wyprawa.nazwa,AVG(zasob.ilosc*zasob.waga) FROM wyprawa LEFT JOIN uczestnicy ON wyprawa.id_wyprawy = uczestnicy.id_wyprawy LEFT JOIN ekwipunek ON ekwipunek.idKreatury = uczestnicy.id_uczestnika LEFT JOIN zasob ON ekwipunek.idZasobu = zasob.idZasobu GROUP BY wyprawa.nazwa;
+SELECT wyprawa.nazwa,AVG(zasob.ilosc*zasob.waga) AS srednia_waga FROM wyprawa LEFT JOIN uczestnicy ON wyprawa.id_wyprawy = uczestnicy.id_wyprawy LEFT JOIN ekwipunek ON ekwipunek.idKreatury = uczestnicy.id_uczestnika LEFT JOIN zasob ON ekwipunek.idZasobu = zasob.idZasobu GROUP BY wyprawa.nazwa;
 
 
-(SELECT COUNT(uczestnicy.id_wyprawy) FROM uczestnicy RIGHT JOIN wyprawa ON uczestnicy.id_wyprawy = wyprawa.id_wyprawy GROUP BY wyprawa.id_wyprawy;)
+(SELECT COUNT(uczestnicy.id_wyprawy) AS ilosc FROM uczestnicy RIGHT JOIN wyprawa ON uczestnicy.id_wyprawy = wyprawa.id_wyprawy GROUP BY wyprawa.id_wyprawy;)
 
 
-SELECT wyprawa.nazwa,AVG(zasob.ilosc*zasob.waga/(SELECT COUNT(uczestnicy.id_wyprawy) FROM uczestnicy RIGHT JOIN wyprawa ON uczestnicy.id_wyprawy = wyprawa.id_wyprawy GROUP BY wyprawa.id_wyprawy;)
-) FROM wyprawa LEFT JOIN uczestnicy ON wyprawa.id_wyprawy = uczestnicy.id_wyprawy LEFT JOIN ekwipunek ON ekwipunek.idKreatury = uczestnicy.id_uczestnika LEFT JOIN zasob ON ekwipunek.idZasobu = zasob.idZasobu GROUP BY wyprawa.nazwa;
 
 
 5.1:
-
+SELECT kreatura.nazwa,DATEDIFF(data_zakonczenia,kreatura.dataUr) AS ile_dni FROM kreatura JOIN uczestnicy ON kreatura.idKreatury = uczestnicy.id_uczestnika JOIN wyprawa ON uczestnicy.id_wyprawy = wyprawa.id_wyprawy  JOIN etapy_wyprawy ON wyprawa.id_wyprawy = etapy_wyprawy.idWyprawy  JOIN sektor ON etapy_wyprawy.sektor = sektor.id_sektora WHERE sektor.nazwa = "Chatka dziadka" GROUP BY kreatura.nazwa;
 
 
 
