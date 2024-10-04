@@ -1,9 +1,30 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Strona-1" id="V13b4Zk2M3cyRt3cg2z2">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="9OjIWXLTbcFo8LXoZZLn-1" value="wysłanie inforamcji podsumowujące dla klienta&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2019-11-14 od 8 do 10 rano mielsimy konsultacje z doradcami z sekurakiem ,neibezpiecznikiem, osobami odpowiezlanmi za włamy,&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="707" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9OjIWXLTbcFo8LXoZZLn-2" value="asekurak bardzo pomogl, sa teraz jedynmi z prowadczacych firm w sprawach dotyczaych bezpieczenstwa&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;powinnismy sie nie przjmowac tylko analizowac to co sie stalo, jesli podjelsimy wszytkie potrzebne srodki ostroznaxoci nie powinnismy sie obawiac&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2019-11-13 12h&lt;/div&gt;&lt;div&gt;spotkalismy sie z prawnikami klienta&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2019-11-14 15h&lt;/div&gt;&lt;div&gt;okreslenie strategi u klienta, ale jak tam wasza polisa?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9OjIWXLTbcFo8LXoZZLn-3" value="11-14 19&lt;div&gt;powrot do olsztyna, przygotowanie wysylki do poszkodowanych&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;11-14 ustalani dalsze w sprawie ip&#39;kow kto stoi za ktorym&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9OjIWXLTbcFo8LXoZZLn-4" value="11-14 o godzinei 8:22, wyjasnie calego zgłoszenia, propozucje pana pawła napisanie oswiadczenie, kogo poifnormował ,ze nie pobrał danych. pan paweł ,podał również swoje adresy ip, z których sie łaćzył fleernym io&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;13 dalsze analziy baz, ktore zsotały pobrane&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;analzi logow, wykrcyie wielokrotnych prob walmanai&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;wykrycie iz ip przydzielone prez hosting bylo wykorzysane na wielu serwiasch&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;sporzadzaeie list serwisow ,tkroe byly hostowane na tym ip&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="360" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9OjIWXLTbcFo8LXoZZLn-5" value="wkonanie kopi na ghezenterze calego serwisu(snapshot)&lt;div&gt;przeisntalowanie maszyny istalacja jednie apacha, fail2ban&#39;a i aktywacja ufw - pod reindeksacje google&#39;a&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;11-15 analzia baz dancyh, wysalnie polaczonych dancyh di wyslania maila infromacyjnego do uztykownikow&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;przygotownie rozwianzaia wyslki maili, kompletowanie baz danych&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="230" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9OjIWXLTbcFo8LXoZZLn-6" value="11-15 bazy danych i mechanizmy wysylki sa gotowe , czekamy na tresci maili do wysylki&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;11-15 11h&lt;/div&gt;&lt;div&gt;analiza logow serwera, przygotowanie materialow dowodowyh, wysylanie pierwszych zgloszen do hostingow&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="560" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9OjIWXLTbcFo8LXoZZLn-7" value="blad w bibliotece apache, ktory pozwala mna zamine w jego konfiguracji&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;zamiana konfiugracji rzez bota nallowa index&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="240" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
