@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Strona-1" id="V13b4Zk2M3cyRt3cg2z2">
-    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="1949" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,13 +17,25 @@
           <mxGeometry x="150" y="360" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="9OjIWXLTbcFo8LXoZZLn-5" value="wkonanie kopi na ghezenterze calego serwisu(snapshot)&lt;div&gt;przeisntalowanie maszyny istalacja jednie apacha, fail2ban&#39;a i aktywacja ufw - pod reindeksacje google&#39;a&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;11-15 analzia baz dancyh, wysalnie polaczonych dancyh di wyslania maila infromacyjnego do uztykownikow&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;przygotownie rozwianzaia wyslki maili, kompletowanie baz danych&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="290" y="230" width="60" height="30" as="geometry" />
+          <mxGeometry x="270" y="240" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="9OjIWXLTbcFo8LXoZZLn-6" value="11-15 bazy danych i mechanizmy wysylki sa gotowe , czekamy na tresci maili do wysylki&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;11-15 11h&lt;/div&gt;&lt;div&gt;analiza logow serwera, przygotowanie materialow dowodowyh, wysylanie pierwszych zgloszen do hostingow&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="270" y="560" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="9OjIWXLTbcFo8LXoZZLn-7" value="blad w bibliotece apache, ktory pozwala mna zamine w jego konfiguracji&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;zamiana konfiugracji rzez bota nallowa index&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="440" y="240" width="60" height="30" as="geometry" />
+          <mxGeometry x="384" y="120" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9OjIWXLTbcFo8LXoZZLn-8" value="15-13 pelna personalizacji&amp;nbsp;&lt;div&gt;maili, cala&lt;div&gt;baza posiadan ass&lt;span style=&quot;background-color: initial;&quot;&gt;zcesie a&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;dresy e-mail&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="380" y="260" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9OjIWXLTbcFo8LXoZZLn-9" value="zawiadomienie do cert.pl o mozliwym ataku hackerskim, numer zgloszenia&lt;div&gt;&amp;nbsp;#807167&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="414" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9OjIWXLTbcFo8LXoZZLn-10" value="w godiznacgh od 14- do 16 zawaidomienie zlzone przez tomasza ziajka z nettom s.c w wydziale przestepczosci gospodarczej komendy miesjkiej w olsztynie o mozliwosci popelniania przestepstwa w postaci ataku hakerskiego, sygnatura zostanie podana po jej nadaniu w nastepym tygodniu sygnatura akt" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="414" y="660" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9OjIWXLTbcFo8LXoZZLn-11" value="uruchomienie po stronie klienta telefonu alarmowego&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;przygotowanie miala&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="40" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
